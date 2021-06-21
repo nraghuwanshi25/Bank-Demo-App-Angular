@@ -14,7 +14,7 @@ export class AppComponent  implements OnInit{
   }
   ngOnInit(): void {
   this.helloService.getRes().subscribe(response=>{
-    console.log("service response"+response);
+    console.log("service response called"+response);
    this.title=response;
     console.log("service called")
   });
